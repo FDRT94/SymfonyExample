@@ -1,0 +1,38 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}
+    <h1>{{ title }}</h1>
+{% endblock %}
+
+{% block body %}
+
+    <h1>{{ title }}</h1>
+
+    <div>
+        <p>Cupcake ipsum dolor sit. Amet I love liquorice jujubes pudding croissant I love pudding.
+            Apple pie macaroon toffee jujubes pie tart cookie applicake caramels. Halvah macaroon I
+            love lollipop. Wypas I love pudding brownie cheesecake tart jelly-o. Bear claw cookie
+            chocolate bar jujubes toffee."
+        </p>
+
+        <p>"Excuse me, I'd like to ASS you a few questions. Hey, maybe I will give you a call sometime.
+            Your number still 911? Look at that, it's exactly three seconds before I honk your nose and
+            pull your underwear over your head. We got no food we got no money and our pets heads are falling
+            off! Haaaaaaarry."
+        </p>
+        <p>"Lorizzle ipsum bling bling sit amizzle, consectetuer adipiscing elit. Nizzle sapien velizzle,
+            bling bling volutpat, suscipit , gravida vel, arcu. Check it out hizzle that's the shizzle.
+            We gonna chung erizzle. Fo izzle dolor fo turpis tempizzle tempor. Gangsta boom shackalack
+            mofo et turpizzle. Sizzle izzle tortor. Pellentesque uhuh ... yih!"
+        </p>
+    </div>
+
+    <h2>Comments ({{ comments|length }})</h2>
+
+    <ul>
+        {% for comment in comments %}
+            <li>{{ comment }}</li>
+        {% endfor %}
+    </ul>
+
+{% endblock %}
